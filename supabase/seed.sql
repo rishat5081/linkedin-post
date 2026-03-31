@@ -1,0 +1,122 @@
+-- Seed data: realistic LinkedIn posts with varied statuses
+INSERT INTO public.posts (title, hook, body, cta, hashtags, image_urls, status, scheduled_for, published_at, created_at) VALUES
+(
+  'The One Habit That Changed My Startup',
+  'I used to start every morning checking Slack. Then I stopped. Here''s what happened →',
+  E'For 2 years I let notifications run my day. Every ping was "urgent." Every thread needed my input.\n\nThen I tried something radical: 90 minutes of deep work before opening any app.\n\nThe first week was brutal. FOMO was real. But by week three, I''d shipped more than the entire previous month.\n\nThe secret wasn''t productivity hacks. It was protecting my creative energy when it was at its peak.\n\nYour mornings belong to your most important work, not someone else''s inbox.',
+  'What''s your morning non-negotiable? Drop it below 👇',
+  ARRAY['#founders', '#deepwork', '#productivity', '#startups'],
+  '{}',
+  'published',
+  NULL,
+  '2026-03-28T09:00:00Z',
+  '2026-03-28T08:00:00Z'
+),
+(
+  'Why We Rewrote Our Backend in 6 Weeks',
+  'Our API was returning 500s every day. We had two options: patch or rebuild. We chose the scary one.',
+  E'Technical debt doesn''t announce itself. It accumulates silently until one day your on-call rotation becomes a full-time job.\n\nHere''s what we did:\n1. Mapped every endpoint and its actual usage\n2. Cut 40% of endpoints nobody called\n3. Migrated from REST to a hybrid REST + event-driven architecture\n4. Wrote integration tests before touching a single line\n\nResult: 99.97% uptime for 90 consecutive days.\n\nThe lesson? Sometimes the fastest path forward is to stop, assess, and rebuild with intention.',
+  'Have you ever done a major rewrite? Was it worth it?',
+  ARRAY['#engineering', '#backend', '#techdebt', '#startup'],
+  '{}',
+  'published',
+  NULL,
+  '2026-03-25T14:00:00Z',
+  '2026-03-25T13:00:00Z'
+),
+(
+  'Design Is Not Decoration',
+  'A beautiful button that no one clicks is just a painting. Design is about outcomes, not aesthetics.',
+  E'I''ve reviewed hundreds of product designs this year. The best ones share one trait: restraint.\n\nGreat product design:\n→ Removes friction, doesn''t add polish\n→ Guides decisions, doesn''t overwhelm with options\n→ Feels invisible when it works perfectly\n\nThe best designers I work with start with the user''s job-to-be-done, not a mood board.\n\nAesthetic quality matters. But it''s a multiplier, not the foundation. Function first, then form.',
+  'What''s one product whose design you genuinely admire? Let me know ↓',
+  ARRAY['#design', '#productdesign', '#ux', '#buildinpublic'],
+  '{}',
+  'published',
+  NULL,
+  '2026-03-22T10:30:00Z',
+  '2026-03-22T10:00:00Z'
+),
+(
+  'AI Won''t Replace You. But Someone Using AI Will.',
+  'I automated 3 hours of my daily workflow last week. Not with a new hire—with a prompt.',
+  E'Here''s what I automated:\n• Meeting summaries → AI generates action items in Slack\n• Code review triage → AI flags high-risk changes first\n• Weekly reporting → AI drafts from our metrics dashboard\n\nTotal time saved: ~15 hours/week across the team.\n\nThis isn''t about replacing people. It''s about removing the repetitive work so talented people can focus on judgment calls, creativity, and strategy.\n\nThe teams that embrace AI as a tool (not a threat) will compound their advantage every single quarter.',
+  'What''s one task you wish AI could handle for you today?',
+  ARRAY['#AI', '#automation', '#futureofwork', '#productivity'],
+  '{}',
+  'scheduled',
+  '2026-04-01T08:00:00Z',
+  NULL,
+  '2026-03-30T10:00:00Z'
+),
+(
+  'Stop Shipping Features. Start Shipping Outcomes.',
+  'We shipped 47 features last quarter. Usage went down. Here''s what we learned the hard way.',
+  E'More features ≠ more value. We learned this after watching our NPS drop while our changelog grew.\n\nThe problem: we were building what users asked for, not what they needed.\n\nThe fix:\n1. Replaced feature requests with outcome interviews\n2. Created a "one metric that matters" for each initiative\n3. Killed 12 features that had < 5% weekly usage\n\nWithin 8 weeks, activation rate jumped 23%.\n\nShip less. Measure more. Listen deeper.',
+  'What feature did you build that nobody used? No judgment—we''ve all been there.',
+  ARRAY['#product', '#startups', '#productmanagement', '#growth'],
+  '{}',
+  'scheduled',
+  '2026-04-03T12:00:00Z',
+  NULL,
+  '2026-03-29T16:00:00Z'
+),
+(
+  'Your Personal Brand Is a Compound Asset',
+  'Two years ago I had 200 LinkedIn connections. Today: 28,000+ and it changed my career trajectory.',
+  E'Here''s what I wish someone told me earlier about building a personal brand:\n\n1. Consistency beats virality. I posted 3x/week for 18 months before anything "took off."\n2. Share your real work. Behind-the-scenes content outperforms polished advice.\n3. Engage before you broadcast. I spent 30 min/day commenting before I wrote my first post.\n4. Your niche finds you. I thought I''d write about marketing. Turns out, people wanted my founder stories.\n\nThe best part? Opportunities come to you. Investors, hires, partners—all from content.\n\nPersonal brand is the highest-ROI investment a founder can make.',
+  'If you''re starting from zero, what''s holding you back from posting? Be honest.',
+  ARRAY['#personalbrand', '#linkedin', '#contentcreation', '#founders'],
+  '{}',
+  'draft',
+  NULL,
+  NULL,
+  '2026-03-31T08:00:00Z'
+),
+(
+  'The 5-Minute Code Review That Saves Hours',
+  'Our PR review time dropped from 2 days to 4 hours. The change was embarrassingly simple.',
+  E'We added a PR template with 5 questions:\n\n1. What does this change?\n2. Why is it needed?\n3. What''s the test plan?\n4. What could go wrong?\n5. Screenshot/recording (if UI)\n\nThat''s it. No fancy tooling. No new process.\n\nWhy it works:\n→ Reviewers have context before reading code\n→ Authors think through edge cases before submitting\n→ Async reviews become productive instead of ping-pong\n\nThe best engineering processes are the ones people actually follow.',
+  'What''s your team''s code review process? I''m always looking to learn.',
+  ARRAY['#engineering', '#codereview', '#devtools', '#teamwork'],
+  '{}',
+  'draft',
+  NULL,
+  NULL,
+  '2026-03-30T14:00:00Z'
+),
+(
+  'I Interviewed 50 Top Performers. They All Do This.',
+  'Not a morning routine. Not cold showers. Something much simpler—and much harder.',
+  E'They all have clarity on their priorities. Not goals. Priorities.\n\nThe difference:\n• A goal is "grow revenue 3x"\n• A priority is "this week I''m closing Deal X and nothing else matters"\n\nTop performers ruthlessly protect their focus. They say no to good opportunities to protect great ones.\n\nThey don''t manage time. They manage attention.\n\nHere''s the exercise that helps: every Sunday, write down ONE thing that would make the week successful. Just one. Then build your calendar around it.\n\nSimple? Yes. Easy? Not even close.',
+  'What''s your ONE priority this week? Write it below to make it real.',
+  ARRAY['#leadership', '#productivity', '#focus', '#careers'],
+  '{}',
+  'published',
+  NULL,
+  '2026-03-20T07:00:00Z',
+  '2026-03-20T06:30:00Z'
+),
+(
+  'Why I Open-Sourced Our Internal Tool',
+  'We built an internal tool that saved us 10 hours/week. Then we gave it away for free. Here''s why →',
+  E'6 months ago our team built a CLI tool for managing database migrations across microservices.\n\nIt was internal-only. Then I thought: what if we open-sourced it?\n\nThe results surprised everyone:\n→ 1,200+ GitHub stars in 3 months\n→ 14 external contributors improved it beyond what we''d planned\n→ 3 senior engineers applied to join us because of the project\n\nOpen source isn''t charity. It''s a hiring moat, a quality multiplier, and a brand builder.\n\nIf you have an internal tool that solves a real problem, consider sharing it. The ROI might surprise you.',
+  'What internal tool does your team rely on that the world should know about?',
+  ARRAY['#opensource', '#engineering', '#devtools', '#hiring'],
+  '{}',
+  'draft',
+  NULL,
+  NULL,
+  '2026-03-29T11:00:00Z'
+),
+(
+  'How to Write LinkedIn Posts That Actually Get Read',
+  'I''ve written 400+ LinkedIn posts. My top 20 all follow the same structure. Here it is (steal it):',
+  E'The anatomy of a high-performing LinkedIn post:\n\n1. THE HOOK (line 1-2)\n   → Pattern interrupt. Make them stop scrolling.\n   → Use a bold claim, counterintuitive take, or specific number.\n\n2. THE STORY (body)\n   → Make it personal. Real > polished.\n   → Use short paragraphs. One idea per line.\n   → Use "→" and line breaks for scanability.\n\n3. THE INSIGHT\n   → What did you learn? Why does it matter?\n   → Connect your experience to a universal truth.\n\n4. THE CTA (last line)\n   → Ask a specific question.\n   → Make it easy to answer.\n\nWrite for one person, not an audience. That''s the real secret.',
+  'Save this for your next post. And tell me: what''s YOUR best writing tip?',
+  ARRAY['#contentcreation', '#linkedin', '#writing', '#personalbrand'],
+  '{}',
+  'scheduled',
+  '2026-04-05T09:00:00Z',
+  NULL,
+  '2026-03-31T07:00:00Z'
+);
